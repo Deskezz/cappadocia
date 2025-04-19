@@ -1,0 +1,88 @@
+// main: 'main.less'
+
+body {
+  background-color: @color-text;
+  .font-mont();
+  position: relative;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+}
+
+a {
+  color: @color-text;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  .font-philosopher;
+  color: @color-btn-text;
+}
+
+.active {
+  display: block;
+}
+.burger {
+  display: none;
+  font-size: 55px;
+  cursor: pointer;
+}
+.close {
+  display: none;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.btn {
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-image: linear-gradient(90deg, #ffd61e 0%, #f9732b 100%);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: @color-btn-text;
+  display: inline-block;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+  .font-mont-semibold();
+  font-size: 16px;
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.error-msg {
+  display: none;
+  color: darkred;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 5px;
+  width: auto;
+}
+
+.main {
+  height: 750px;
+  width: 100%;
+  .bgr-image(main-bgr);
+  background-position: bottom;
+}
+
+.forms {
+  width: 100%;
+  .bgr-image(footer-bgr);
+  background-position: top;
+}

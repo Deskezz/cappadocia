@@ -1,0 +1,29 @@
+// main: 'main.less'
+
+.color-gradient() {
+  background: rgb(250, 116, 43);
+  background: linear-gradient(270deg, rgba(250, 116, 43, 1) 0%, rgba(255, 214, 30, 1) 100%);
+}
+
+.flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-space() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-col() {
+  display: flex;
+  flex-direction: column;
+}
+
+.bgr-image(@way) {
+  background-image: url("../src/images/@{way}.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
